@@ -56,13 +56,3 @@ readData <- function(filename, d1, d2)
   }
   return (elpower)
 }
-
-drawplot1 <- function() {
-  png(filename = "plot1.png", width = 480, height = 480)
-  hist(elpower$Global_active_power, 
-       xlab = "Global Active Power (kilowatts)", 
-       main = "Global Active Power",
-       col = "red")
-  #dev.copy(png, file = "plot1.png", width = 480, height = 480)
-  dev.off()
-}
