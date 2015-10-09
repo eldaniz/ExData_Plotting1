@@ -16,7 +16,7 @@ drawplot2 <- function() {
 # date bounds
 d1 = as.Date("01/02/2007", format="%d/%m/%Y")
 d2 = as.Date("02/02/2007", format="%d/%m/%Y")
-#elpower <- readData("household_power_consumption.txt", d1, d2)
+elpower <- readData("household_power_consumption.txt", d1, d2)
 
 # !!! set English language (for non-english countries)
 Sys.setlocale("LC_TIME", "C")
